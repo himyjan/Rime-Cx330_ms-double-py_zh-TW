@@ -61,11 +61,3 @@
 ## 本倉庫依賴 [Rime](https://github.com/rime/home)
 
 ### [![Rime網站](https://img.shields.io/badge/Website-Rime-9cf)](https://rime.im)
-
-# 請柴喝杯咖啡
-
-LBC錢包地址：`bc2FpeaknTyveZhzTatj6VWjshmxVYPfC5`
-
-BTC錢包地址：`1LT8U6C7D6HcURRYfHH3HCELU12KztShjg`
-
-USDT錢包地址（TRC-20）：`TCqbPcpFpEefRcbY3VQFuMQ3ztaU4NHnTs`
