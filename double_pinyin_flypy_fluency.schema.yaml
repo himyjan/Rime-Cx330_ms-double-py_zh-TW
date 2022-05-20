@@ -3,7 +3,7 @@
 # encoding: utf-8
 
 schema:
-  schema_id: double_pinyin_flypy_fluency        # 更改方案标识
+  schema_id: double_pinyin_flypy_fluency # 更改方案标识
   name: 小鶴雙拼·語句流
   version: "fluency_0.17"
   author:
@@ -13,26 +13,26 @@ schema:
     「朙月拼音＋小鶴雙拼」語句流方案。
     以空格分詞、標點或回車上屏。
   dependencies:
-    - stroke                        # 带别名的 translator 所引用的字典部署时不会自动编译
-    - chinese_contain_english       # 只有 translator/dictionary: 指定的字典会被编译
-    - emoji                         # 因此需要设置输入方案的依赖关系，保证词典可用
+    - stroke # 带别名的 translator 所引用的字典部署时不会自动编译
+    - chinese_contain_english # 只有 translator/dictionary: 指定的字典会被编译
+    - emoji # 因此需要设置输入方案的依赖关系，保证词典可用
 
 switches:
   - name: ascii_mode
     reset: 0
-    states: [ 中文, 西文 ]
+    states: [中文, 西文]
   - name: full_shape
-    states: [ 半角, 全角 ]
+    states: [半角, 全角]
   - name: ascii_punct
-    states: [ ，。, ，． ]
+    states: [，。, ，．]
   - name: simplification
-    states: [ 漢字, 汉字 ]
+    states: [漢字, 汉字]
   - name: ascii_punct
-  #個人習慣英文標點
-  reset: 1
-  states: ["。，", "．，"]
+    #個人習慣英文標點
+    reset: 1
+    states: ["。，", "．，"]
 simplifier:
-    option_name: zh_simp
+  option_name: zh_simp
 engine:
   processors:
     - ascii_composer
@@ -42,8 +42,8 @@ engine:
     - punctuator
     - selector
     - navigator
-    - express_editor        # 语句流必需，编辑器，处理空格、回车上屏、回退键等
-                            # 如果你不喜欢语句流，可将其改为 express_editor
+    - express_editor # 语句流必需，编辑器，处理空格、回车上屏、回退键等
+      # 如果你不喜欢语句流，可将其改为 express_editor
   segmentors:
     - ascii_segmentor
     - matcher
@@ -54,15 +54,15 @@ engine:
     - punct_translator
     - reverse_lookup_translator
     - script_translator
-    - table_translator@chinese_contain_english      # 添加码表式副翻译器
-    - table_translator@custom_phrase                # 同上
-    - table_translator@emoji                        # 同上
+    - table_translator@chinese_contain_english # 添加码表式副翻译器
+    - table_translator@custom_phrase # 同上
+    - table_translator@emoji # 同上
   filters:
     - simplifier
     - uniquifier
 
 speller:
- algebra:
+  algebra:
     - "erase/^xx$/"
     #模糊音開始
     #- "derive/^([zcs])h/$1/"           # zh, ch, sh => z, c, s
@@ -103,7 +103,7 @@ speller:
   delimiter: " '"
 translator:
   dictionary: luna_pinyin
-  prism: double_pinyin_flypy_fluency    # 由拼写运算规则产生的拼写映射表的名称
+  prism: double_pinyin_flypy_fluency # 由拼写运算规则产生的拼写映射表的名称
   # 去掉了 preedit_format:, 作用是输入双拼码的时候不转化为全拼码
   preedit_format:
     - "xform/([bpmfdtnljqx])n/$1iao/"
@@ -174,33 +174,33 @@ reverse_lookup:
 
 punctuator:
   full_shape:
-    " ": {commit: "　"}
-    "!": {commit: "！"}
-    "\"": {pair: ["“", "”"]}
+    " ": { commit: "　" }
+    "!": { commit: "！" }
+    '"': { pair: ["“", "”"] }
     "#": ["＃", "⌘"]
     "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
     "%": ["％", "°", "℃"]
     "&": "＆"
-    "'": {pair: ["‘", "’"]}
+    "'": { pair: ["‘", "’"] }
     "(": "（"
     ")": "）"
     "*": ["＊", "·", "・", "×", "※", "❂"]
     "+": "＋"
-    ",": {commit: "，"}
+    ",": { commit: "，" }
     "-": "－"
-    .: {commit: "。"}
+    .: { commit: "。" }
     "/": ["／", "÷"]
-    ":": {commit: "："}
-    ";": {commit: "；"}
+    ":": { commit: "：" }
+    ";": { commit: "；" }
     "<": ["《", "〈", "«", "‹"]
     "=": "＝"
     ">": ["》", "〉", "»", "›"]
-    "?": {commit: "？"}
+    "?": { commit: "？" }
     "@": ["＠", "☯"]
     "[": ["「", "【", "〔", "［"]
     "\\": ["、", "＼"]
     "]": ["」", "】", "〕", "］"]
-    "^": {commit: "……"}
+    "^": { commit: "……" }
     _: "——"
     "`": "｀"
     "{": ["『", "〖", "｛"]
@@ -208,32 +208,32 @@ punctuator:
     "}": ["』", "〗", "｝"]
     "~": "～"
   half_shape:
-    "!": {commit: "！"}
-    "\"": {pair: ["“", "”"]}
+    "!": { commit: "！" }
+    '"': { pair: ["“", "”"] }
     "#": "#"
     "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
     "%": ["%", "％", "°", "℃"]
     "&": "&"
-    "'": {pair: ["‘", "’"]}
+    "'": { pair: ["‘", "’"] }
     "(": "（"
     ")": "）"
     "*": ["*", "＊", "·", "・", "×", "※", "❂"]
     "+": "+"
-    ",": {commit: "，"}
+    ",": { commit: "，" }
     "-": "-"
-    .: {commit: "。"}
+    .: { commit: "。" }
     "/": ["、", "/", "／", "÷"]
-    ":": {commit: "："}
-    ";": {commit: "；"}
+    ":": { commit: "：" }
+    ";": { commit: "；" }
     "<": ["《", "〈", "«", "‹"]
     "=": "="
     ">": ["》", "〉", "»", "›"]
-    "?": {commit: "？"}
+    "?": { commit: "？" }
     "@": "@"
     "[": ["「", "【", "〔", "［"]
     "\\": ["、", "\\", "＼"]
     "]": ["」", "】", "〕", "］"]
-    "^": {commit: "……"}
+    "^": { commit: "……" }
     _: "——"
     "`": "`"
     "{": ["『", "〖", "｛"]
@@ -243,38 +243,42 @@ punctuator:
   import_preset: default
 key_binder:
   bindings:
-    - {accept: "Control+p", send: Up, when: composing}
-    - {accept: "Control+n", send: Down, when: composing}
-    - {accept: "Control+b", send: Left, when: composing}
-    - {accept: "Control+f", send: Right, when: composing}
-    - {accept: "Control+a", send: Home, when: composing}
-    - {accept: "Control+e", send: End, when: composing}
-    - {accept: "Control+d", send: Delete, when: composing}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
-    - {accept: "Control+h", send: BackSpace, when: composing}
-    - {accept: "Control+g", send: Escape, when: composing}
-    - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: comma, send: Page_Up, when: paging}
-    - {accept: period, send: Page_Down, when: has_menu}
-    - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+4", toggle: simplification, when: always}
-    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+exclam", select: .next, when: always}
-    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
-    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: "Shift+space", toggle: full_shape, when: always}
-    - {accept: "Control+period", toggle: ascii_punct, when: always}
+    - { accept: "Control+p", send: Up, when: composing }
+    - { accept: "Control+n", send: Down, when: composing }
+    - { accept: "Control+b", send: Left, when: composing }
+    - { accept: "Control+f", send: Right, when: composing }
+    - { accept: "Control+a", send: Home, when: composing }
+    - { accept: "Control+e", send: End, when: composing }
+    - { accept: "Control+d", send: Delete, when: composing }
+    - { accept: "Control+k", send: "Shift+Delete", when: composing }
+    - { accept: "Control+h", send: BackSpace, when: composing }
+    - { accept: "Control+g", send: Escape, when: composing }
+    - { accept: "Control+bracketleft", send: Escape, when: composing }
+    - { accept: "Alt+v", send: Page_Up, when: composing }
+    - { accept: "Control+v", send: Page_Down, when: composing }
+    - { accept: ISO_Left_Tab, send: "Shift+Left", when: composing }
+    - { accept: "Shift+Tab", send: "Shift+Left", when: composing }
+    - { accept: Tab, send: "Shift+Right", when: composing }
+    - { accept: minus, send: Page_Up, when: has_menu }
+    - { accept: equal, send: Page_Down, when: has_menu }
+    - { accept: comma, send: Page_Up, when: paging }
+    - { accept: period, send: Page_Down, when: has_menu }
+    - { accept: "Control+Shift+1", select: .next, when: always }
+    - { accept: "Control+Shift+2", toggle: ascii_mode, when: always }
+    - { accept: "Control+Shift+3", toggle: full_shape, when: always }
+    - { accept: "Control+Shift+4", toggle: simplification, when: always }
+    - { accept: "Control+Shift+5", toggle: extended_charset, when: always }
+    - { accept: "Control+Shift+exclam", select: .next, when: always }
+    - { accept: "Control+Shift+at", toggle: ascii_mode, when: always }
+    - { accept: "Control+Shift+numbersign", toggle: full_shape, when: always }
+    - { accept: "Control+Shift+dollar", toggle: simplification, when: always }
+    - {
+        accept: "Control+Shift+percent",
+        toggle: extended_charset,
+        when: always,
+      }
+    - { accept: "Shift+space", toggle: full_shape, when: always }
+    - { accept: "Control+period", toggle: ascii_punct, when: always }
   import_preset: default
 recognizer:
   import_preset: default
