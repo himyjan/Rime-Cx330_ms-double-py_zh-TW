@@ -57,8 +57,7 @@ patch:
   "app_options/mintty.exe":
     ascii_mode: true
 
-#自定義配色
-
+# 自定義配色
 # 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
 #   系統默認色系 - MaybeWeHaveHug
 #   安卓／Android - android
