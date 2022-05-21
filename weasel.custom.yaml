@@ -69,12 +69,12 @@ patch:
 #   清風／Cool Breeze - cool_breeze
 #   暗堂／Dark Temple - dark_temple
 #   銅鑼衛門／Doraemon - doraemon
-#   DOTA 2 - dota2
-#   西班牙／España - espana
+#   DOTA 2 - dota_2
+#   西班牙／España - espagna
 #   小鶴飛揚／flypy - flypy
 #   紅蘿蔔／Gholabok - gholabok
 #   谷歌／Google - google
-#   Google+ - google
+#   Google+ - google_plus
 #   墨池／Ink - ink
 #   熊出沒／Kuma Shuzboz - kuma_shuzboz
 #   翡翠／Koun - koun
@@ -82,7 +82,7 @@ patch:
 #   明月／Luna - luna
 #   澳門／Macau - macau
 #   現代藍／Metro Blue - metroblue
-#   現代戰爭／Modern Warfare - RoseofER
+#   現代戰爭／Modern Warfare - modern_warfare
 #   NBA - nba
 #   遊譯四／PS4 - ps4
 #   幽能／Psionics - psionics
