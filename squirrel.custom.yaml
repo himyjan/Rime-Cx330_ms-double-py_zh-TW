@@ -1,5 +1,5 @@
 patch:
-  style/color_scheme: MaybeWeHaveHug #DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
+  style/color_scheme: android #DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
   # 輸入直排 or 橫排
   style/candidate_list_layout: linear # linear | stacked
   # style/text_orientation": horizontal # horizontal | vertical
@@ -41,7 +41,7 @@ patch:
 #   墨池／Ink - ink
 #   熊出沒／Kuma Shuzboz - kuma_shuzboz
 #   翡翠／Koun - koun
-#   孤寺／Lost Temple - lost_tample
+#   孤寺／Lost Temple - lost_temple
 #   明月／Luna - luna
 #   澳門／Macau - macau
 #   現代藍／Metro Blue - metroblue
@@ -88,7 +88,6 @@ patch:
 #   腐敗氣息 - DyingMood
 #   mojave_dark - mojave_dark
 #   Windows 10 - win10
-#   現代藍／Metro Blue - metroblue
 #   蘋果白／Mac White - mac_white
 #   蘋果白2／Mac White2 - mac_white2
 #   系統藍／System Blue - system_blue
@@ -114,17 +113,7 @@ patch:
 #   coolcao - coolcao
 #   Mac仿原生亮色/macos_light - macos_light
 #   Mac仿原生暗色/macos_dark - macos_dark
-#   碧水／Aqua - aqua
-#   青天／Azure - azure
 #   簡約白／Clean White - clean_white
-#   暗堂／Dark Temple - dark_temple
-#   墨池／Ink - ink
-#   谷歌／Google - google
-#   明月／Luna - luna
-#   孤寺／Lost Temple - lost_temple
-#   幽能／Psionics - psionics
-#   星際我爭霸／StarCraft - StarCraft
-#   曬經石／Solarized Rock - solarized_rock
 #   Pron - Pron
 #   Micosoft - Micosoft
 #   默默／Momo - momo
@@ -133,7 +122,6 @@ patch:
 #   apathy - apathy
 #   興宇／Mxy - Mxy
 #   Wii2 - Wii2
-#   遊驛四／ps4 - ps4
 #   月白／Moonlight - Moonlight
 #   qbycs - qbycs
 #   阿斯頓／asd - asd
