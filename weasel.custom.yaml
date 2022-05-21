@@ -13,8 +13,10 @@ customization:
 patch:
   # 以下修改面板
   #設定 style:
-  style/color_scheme: DarkMode # 設定配色方案的名稱 DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
+  style/color_scheme: google # 設定配色方案的名稱 DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
   style/display_tray_icon: false	# 顯示托盤圖示，開啟（true）；關閉（false），預設false
+  show_notifications_when: appropriate # 狀態通知，適當，也可設為全開（always）全關（never）
+
   # 文字字體 字體可以檢視Windows的Fonts，你電腦裡有的字體正常都能支援
   style/font_face: "Microsoft YaHei"	# 設定配色方案的字型；可用"黑體"，預設為"Microsoft YaHei"
   style/font_point: 20	# 設定配色方案的字型大小，預設14
