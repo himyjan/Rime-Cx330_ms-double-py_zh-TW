@@ -1,17 +1,38 @@
 patch:
-  style/color_scheme: android #DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
+  style/color_scheme: DarkMode #DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
+  style/display_tray_icon: false	# 顯示托盤圖示，開啟（true）；關閉（false），預設false
+  # 文字字體 字體可以檢視Mac的FontBook，你電腦裡有的字體正常都能支援
+  style/font_face: 'Times-Roman,YuppyTC-Regular,AppleColorEmoji'	# 設定配色方案的字型；可用"黑體" Times-Roman,HanaMinA,HanaMinB  #Times-Roman,PingFangTC-Light,AppleColorEmoji,YuppyTC-Regular
+  style/font_point: 20	# 設定配色方案的字型大小，預設14
+
   # 輸入直排 or 橫排
   style/candidate_list_layout: linear # linear | stacked
-  # style/text_orientation": horizontal # horizontal | vertical
-  style/inline_preedit: false #true
+  style/text_orientation": horizontal # horizontal | vertical
   style/line_spacing: 2 #6 #1
   style/spacing: 2 #10 #5
-  # 文字字體 字體可以檢視Mac的FontBook，你電腦裡有的字體正常都能支援
-  style/font_face: 'Times-Roman,YuppyTC-Regular,AppleColorEmoji' #Times-Roman,HanaMinA,HanaMinB  #Times-Roman,PingFangTC-Light,AppleColorEmoji # YuppyTC-Regular
-  style/font_point: 20 #21
+  style/fullscreen: false	# 全屏輸入，即候選視窗佔滿整個螢幕，預設false
+  style/horizontal: true	# 候選窗是否橫排，true橫排，false豎排，預設false
+  style/inline_preedit: true	# TSF嵌入模式，正在輸入的編碼將嵌入到游標焦點處（僅支援TSF），預設false
+
   # 數字標籤字體 字體可以檢視Mac的FontBook，你電腦裡有的字體正常都能支援
   style/label_font_face: 'ComicSansMS-BoldItalic' # DFEr-W4-WIN-BF # 儷黑 Pro # ComicSansMS-BoldItalic
   style/label_font_point: 14 #14 #12 #18 #20
+  style/label_format: "%s. "	# 候選字前面的編號，預設"%s."
+
+  # 設定style/layout:
+  style/layout/border_width: 0	# 候選視窗的外層邊框寬度，預設3
+  style/layout/candidate_spacing: 5	# 候選字行間隔，預設5
+  style/layout/hilite_padding: 2	# 候選字背景色色塊高度，預設2，若想候選字背景色塊無邊界填充候選框，僅需其高度和候選字上下邊距一致即可
+  style/layout/hilite_spacing: 3	# 序號和候選字之間的間隔，預設4
+  style/layout/margin_x: 5	# 候選字左右邊距，預設12
+  style/layout/margin_y: 5	# 候選字上下邊距，預設12
+  style/layout/min_height: 0	# 候選視窗的最小高，預設0
+  style/layout/min_width: 150	# 候選視窗的最小寬，預設160
+  style/layout/round_corner: 6	# 候選字背景色塊圓角幅度，預設4
+  style/layout/spacing: 10	# 當候選視窗是非TSF（編碼）嵌入（游標）模式時，編碼與候選遮罩色塊之間的距離，預設10
+
+  # us_keyboard_layout: true	# 鍵盤選項：應用美式鍵盤佈局
+
   # 前方標籤位置與後面選字的距離
   # "標籤與前方間距%c標籤與選字間距%@選字與後方間距" 像是這樣
   # \2002 是en space的寬度 \u2004是1/3 em \u2005 是1/4 em \u2006 是1/6 em \u2007 是圖形空間的寬度 \u2008 是標點符號的寬度
