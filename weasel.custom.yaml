@@ -123,6 +123,16 @@ patch:
 #   幽能／Psionics - psionics
 #   星際我爭霸／StarCraft - StarCraft
 #   曬經石／Solarized Rock - solarized_rock
+#   Pron - Pron
+#   Micosoft - Micosoft
+#   默默／Momo - momo
+#   秋日橙 - red_dark
+#   沙漠夜／Mojave Dark - mojave_dark
+#   apathy - apathy
+#   orange_dark - Mxy
+#   orange_dark - orange_dark
+#   orange_dark - orange_dark
+#   orange_dark - orange_dark
 
   preset_color_schemes/RoseofER:
       name: 皇帝玫瑰
@@ -1311,8 +1321,8 @@ patch:
       hilited_comment_text_color: 0x000000
 
     preset_color_schemes/Micosoft:
-      name: "Micosoft" # 配色方案名稱
-      author: "XNOM" # 配色方案作者
+      name: Micosoft # 配色方案名稱
+      author: XNOM # 配色方案作者
       back_color: 0xffffff # 候選框背景色
       border_color: 0xD77800 # 候選框邊框顏色
       text_color: 0x000000 # 已選擇字文字顏色
@@ -1335,8 +1345,8 @@ patch:
       hilited_candidate_back_color: 0xFFFFFF  # 高亮候選項的底色，若與背景色不同就會顯出光棒
 
     preset_color_schemes/red_dark:
-      name: "夏日紅"
-      author: "thepoy"
+      name: 夏日紅
+      author: thepoy
       back_color: 0x030303
       border_color: 0x0A0A0A
       text_color: 0xFAFAFF
@@ -1348,8 +1358,8 @@ patch:
       comment_text_color: 0xFCFCFC
 
     preset_color_schemes/orange_dark:
-      name: "秋日橙"
-      author: "thepoy"
+      name: 秋日橙
+      author: thepoy
       back_color: 0x030303
       border_color: 0x0A0A0A
       text_color: 0xFAFAFF
@@ -1361,8 +1371,8 @@ patch:
       comment_text_color: 0xFCFCFC
 
     preset_color_schemes/mojave_dark:
-      name: "沙漠夜／Mojave Dark"
-      author: "xiehuc <xiehuc@gmail.com>"
+      name: 沙漠夜／Mojave Dark
+      author: xiehuc <xiehuc@gmail.com>
       horizontal: true
       inline_preedit: true
       candidate_format: "%c %@"
@@ -1387,7 +1397,8 @@ patch:
       comment_text_color: 0xdedddd
 
     preset_color_schemes/apathy: #配色ok
-      author: "LIANG Hai"
+      name: apathy
+      author: LIANG Hai
       back_color: 0xFFFFFF
       border_height: 0
       border_width: 8
@@ -1434,8 +1445,8 @@ patch:
       label_color: 0xcac9c8
 
     preset_color_schemes/ps4:
-      name: "遊驛四／ps4"  #方案名。中文西文皆可。
-      author: " Patricivs ipatrickmac@qq.com"  #作者名及連繫方式。
+      name: 遊驛四／ps4  #方案名。中文西文皆可。
+      author: Patricivs ipatrickmac@qq.com  #作者名及連繫方式。
       text_color: 0xffffff  #已選候選項顏色。格式爲0xbbggrr
       back_color: 0x000000  #底色
       border_color: 0x000000  #邊框色
@@ -1462,8 +1473,8 @@ patch:
       comment_text_color: 0x404040
 
     preset_color_schemes/qbycs:
-      name: "qbycs"
-      author: "zz"
+      name: qbycs
+      author: zz
       back_color: 0xEDEDED #候選框 背景色
       border_color: 0xEDEDED #候選框 邊框顏色
       text_color: 0x000000 #已選擇字 文字顏色
