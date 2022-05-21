@@ -18,7 +18,7 @@ patch:
   style/font_face: "Microsoft YaHei"	# 設定配色方案的字型；可用"黑體"，預設為"Microsoft YaHei"
   style/font_point: 12	# 設定配色方案的字型大小，預設14
   style/fullscreen: false	# 全屏輸入，即候選視窗佔滿整個螢幕，預設false
-  style/horizontal: false	# 候選窗是否橫排，true橫排，false豎排，預設false
+  style/horizontal: true	# 候選窗是否橫排，true橫排，false豎排，預設false
   style/inline_preedit: true	# TSF嵌入模式，正在輸入的編碼將嵌入到游標焦點處（僅支援TSF），預設false
   style/label_format: "%s. "	# 候選字前面的編號，預設"%s."
 
