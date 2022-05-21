@@ -1,6 +1,458 @@
 patch:
-  show_notifications_when: appropriate # 状态通知，适当，也可设为全开（always）全关（never）
-  style/color_scheme: Cx330Pink             # 選用的方案命名，不能有空格
+  style/color_scheme: TriColorDumpling #DyingMood #ClassicChrome #TodayIsNotGood #Grassland #MaybeWeHaveHug #DarkMode #GoodEatMango #BigSurDesert #BigSurBeach #AllBlue #OrangeSugar #BigRice #YoungBlood #EastSidePurple #HappySea #Senbe #Sunset #HouseDesign #RoseofER #TriColorDumpling #Tiffany #McDonald #Lakers
+  # 輸入直排 or 橫排
+  style/candidate_list_layout: stacked # linear | stacked
+  # style/text_orientation": horizontal # horizontal | vertical
+  style/inline_preedit: false #true
+  style/line_spacing: 2 #6 #1
+  style/spacing: 2 #10 #5
+  # 文字字體 字體可以查看Mac的FontBook，你電腦裡有的字體正常都能支援
+  style/font_face: 'Times-Roman,YuppyTC-Regular,AppleColorEmoji' #Times-Roman,HanaMinA,HanaMinB  #Times-Roman,PingFangTC-Light,AppleColorEmoji # YuppyTC-Regular
+  style/font_point: 20 #21
+  # 數字標籤字體 字體可以查看Mac的FontBook，你電腦裡有的字體正常都能支援
+  style/label_font_face: 'ComicSansMS-BoldItalic' # DFEr-W4-WIN-BF # 儷黑 Pro # ComicSansMS-BoldItalic
+  style/label_font_point: 14 #14 #12 #18 #20
+  # 前方標籤位置與後面選字的距離
+  # "標籤與前方間距%c標籤與選字間距%@選字與後方間距" 像是這樣
+  # \2002 是en space的寬度 \u2004是1/3 em \u2005 是1/4 em \u2006 是1/6 em \u2007 是圖形空間的寬度 \u2008 是標點符號的寬度
+  style/candidate_format: "\u2004%c\u2002%@\u2004"
+  style/corner_radius: 9                       # 外框圓角
+  style/border_height: 5                       # 字與上下邊框的高度差
+  style/border_width: 5                        # 字與左右邊框的寬度差
+  style/base_offset: -3                        # 基線調整
+
+  preset_color_schemes/RoseofER:
+      name: 皇帝玫瑰
+      author: upfloor5
+      color_space: display_p3                  # 使用p3廣色域顯色
+      border_color: '0x9CB6E5'                 # 邊框顏色
+      back_color: '0xCCCCFF'
+      text_color: '0x6BE8FF' #0x0B86B8
+      hilited_text_color: '0x00859E' #0x0B86B8
+      hilited_back_color: '0xCCCCFF' #0xC3C3E6 #0x99EFFF
+      hilited_candidate_text_color: '0x00EFFF'
+      hilited_candidate_back_color: '0x8F8FBC'
+      hilited_corner_radius: 7
+      candidate_text_color: '0x2A2AA5'
+      comment_text_color: '0x8080F0'
+      label_color: '0x4E81E6'
+
+  preset_color_schemes/Lakers:
+    name: 紫金王朝
+    author: upfloor5
+    color_space: display_p3                    # 使用p3廣色域顯色
+    border_color: '0x561B2E'                   # 邊框顏色
+    back_color: '0x561B2E'
+    text_color: '0x0499EE'
+    hilited_text_color: ''
+    hilited_back_color: '0x561B2E'
+    hilited_candidate_text_color: '0x03A5F2'
+    hilited_candidate_back_color: '0xB3229A'
+    hilited_candidate_label_color: '0x05EEFF'
+    hilited_comment_text_color: ''
+    hilited_corner_radius: 7
+    candidate_text_color: '0x3CBBF2'
+    label_color: '0xFFFFFF'
+    comment_text_color: '0xEFBFD9'
+
+  preset_color_schemes/McDonald:
+    name: 麥當當
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x0700DB'                  # 邊框顏色
+    hilited_corner_radius: 9
+    back_color: '0x0700DB'
+    text_color: '0x0CBCFF'
+    hilited_text_color: '0xFDFAFF'
+    hilited_back_color: '0x0700DB'
+    hilited_candidate_text_color: '0x0CBCFF'
+    hilited_candidate_back_color: ''
+    hilited_candidate_label_color: '0x0CBCFF'
+    hilited_comment_text_color: '0x71F0E3'
+    candidate_text_color: '0x0993C7'
+    label_color: '0xBDBDBD'
+    comment_text_color: '0xF0F0F0'
+
+  preset_color_schemes/Tiffany:
+    name: Tiffany
+    author: upfloor5
+    color_space: display_p3                    # 使用p3廣色域顯色
+    border_color: '0xFDF8D3'                   # 邊框顏色
+    hilited_corner_radius: 0
+    back_color: '0xD0D989'
+    text_color: ''
+    hilited_text_color: '0x75745D'
+    hilited_back_color: '0xD0D989' #0xFFFFCD
+    hilited_candidate_text_color: '0x466651'#0xE3FF75 0x466651
+    hilited_candidate_back_color: '0xB2CD7E'#0xADADAD 0xB2CD7E
+    hilited_candidate_label_color: '0x0A0A0A'
+    hilited_comment_text_color: '0xFFFFCD'
+    candidate_text_color: '0x757575'
+    label_color: '0xF2F2F2'
+    comment_text_color: '0xDFFFBA'
+
+  preset_color_schemes/TriColorDumpling:
+    name: 三色丸子
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x9EC2AF'                  # 邊框顏色
+    hilited_corner_radius: 7
+    back_color: '0xBAE8C3'
+    text_color: '0xFFFFFF'
+    hilited_text_color: '0xB982C4'
+    hilited_back_color: '0xBAE8C3'
+    hilited_candidate_text_color: '0xFFFFFF'
+    hilited_candidate_back_color: '0xB399E1'
+    hilited_candidate_label_color: '0xF7F0F4'
+    hilited_comment_text_color: ''
+    candidate_text_color: '0x79967E'
+    label_color: '0x9C8BEB'
+    comment_text_color: '0x826A9F'
+
+  preset_color_schemes/HouseDesign:
+    name: 室內設計
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x375789'                  # 邊框顏色
+    hilited_corner_radius: 0
+    back_color: '0x99AFC7'
+    text_color: '0x627182'
+    hilited_text_color: '0x51538F'
+    hilited_back_color: '0x99AFC7'
+    hilited_candidate_text_color: '0xE2E2FF'
+    hilited_candidate_back_color: '0x375789'
+    hilited_candidate_label_color: '0x939BAE'
+    hilited_comment_text_color: ''
+    candidate_text_color: '0x2E71BA'
+    label_color: '0x76CCF7'
+    comment_text_color: '0x51538F'
+
+  preset_color_schemes/Sunset:
+    name: 夕陽
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x658DC6'                  # 邊框顏色
+    back_color: '0x5AB0F3'                    # 背景顏色
+    text_color: '0x416AF4'                    # 字體顏色
+    preedit_back_color: '0x5AB0F3'            # 上方拼音或是注音位置背景的底部顏色
+    hilited_text_color: '0x416AF4'            # 上方拼音或是注音字體顏色
+    hilited_back_color: '0x5AB0F3'            # 上方拼音或是注音背景顏色
+    hilited_corner_radius: 7                  # 候選字框框圓角
+    hilited_candidate_text_color: '0x7788F4'  # 候選字體顏色
+    hilited_candidate_back_color: '0x724A5C'  # 候選背景顏色
+    hilited_candidate_label_color: '0x416AF4' # 候選數字或是英文標籤顏色
+    hilited_comment_text_color: '0xFFFFFF'    # 候選字拼音或是注音字體顏色
+    candidate_text_color: '0x6D58A3'
+    label_color: '0x3A5FDB'
+    comment_text_color: '0x724A5C'
+
+  preset_color_schemes/Senbe:
+    name: 仙貝
+    author: upfloor5
+    # color_space: display_p3                # 使用p3廣色域顯色 這個主題建議不要使用
+    border_color: '0x5187BF'                 # 邊框顏色
+    hilited_corner_radius: 0
+    back_color: '0x416BBE'
+    text_color: '0x76CCF7'
+    hilited_text_color: '0x000000'
+    hilited_back_color: '0x416BBE'
+    hilited_candidate_text_color: '0x000000'
+    hilited_candidate_back_color: '0x5187BF'
+    hilited_candidate_label_color: '0x76CCF7'
+    hilited_comment_text_color: ''
+    candidate_text_color: '0x658DC6'
+    label_color: '0x375789'
+    comment_text_color: '0x375789'
+
+  preset_color_schemes/HappySea:
+    name: 快樂海洋
+    author: upfloor5
+    color_space: display_p3                  # 使用p3廣色域顯色
+    border_color: '0xF1C17E'               # 邊框顏色
+    hilited_corner_radius: 7
+    back_color: '0xF1C17E'
+    text_color: '0x8564B1'
+    hilited_text_color: '0x8564B1'
+    hilited_back_color: '0xF1C17E'
+    # F1C17E前面加了00所以不會顯示顏色直接變透明，所以顯示底色的back_color
+    hilited_candidate_text_color: '0xA5A047'
+    hilited_candidate_back_color: '0xF8E9F9'
+    hilited_candidate_label_color: '0xA76E4F'
+    hilited_comment_text_color: '0xF2943D'
+    candidate_text_color: '0x658DC6'
+    label_color: '0x76CCF7'
+    comment_text_color: '0xE4BCF2'
+
+  preset_color_schemes/EastSidePurple:
+    name: 紫氣東來
+    author: upfloor5
+    color_space: display_p3                  # 使用p3廣色域顯色
+    border_color: '0x8564B1'                 # 邊框顏色
+    hilited_corner_radius: 0
+    back_color: '0xE9B4D7'
+    text_color: '0x8027AF'
+    hilited_text_color: '0x8027AF'
+    hilited_back_color: '0x00E9B4D7'
+    hilited_candidate_text_color: '0xE9B4D7'
+    hilited_candidate_back_color: '0x8564B1'
+    hilited_candidate_label_color: '0x812258'
+    hilited_comment_text_color: '0xC591A3'
+    candidate_text_color: '0x994F55'
+    label_color: '0x416BBE'
+    comment_text_color: '0xC591A3'
+
+  preset_color_schemes/YoungBlood:
+    name: 年輕十歲
+    author: upfloor5
+    color_space: display_p3                    # 使用p3廣色域顯色
+    border_color: '0xC1E7C1'                   # 邊框顏色
+    hilited_corner_radius: 0                   # 候選字圓角
+    back_color: '0xE5F6FC'
+    text_color: '0xA76E4F'
+    hilited_text_color: '0xA76E4F'
+    hilited_back_color: '0x00E5F6FC'
+    hilited_candidate_text_color: '0x8027AF'
+    hilited_candidate_back_color: '0xC1E7C1'
+    hilited_candidate_label_color: '0x889FC6'
+    hilited_comment_text_color: '0x9C8BEB'
+    candidate_text_color: '0x9CB6E5'
+    label_color: '0x889FC6'
+    comment_text_color: '0x9C8BEB'
+
+  preset_color_schemes/BigRice:
+    name: 大米
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x9CB6E5'                  # 邊框顏色
+    hilited_corner_radius: 7                  # 候選字圓角
+    back_color: '0x9CB6E5'
+    text_color: '0x812258'
+    hilited_text_color: '0x812258'
+    hilited_back_color: '0x9CB6E5'
+    hilited_candidate_text_color: '0x6CC7E4'
+    hilited_candidate_back_color: '0xD7E4EC'
+    hilited_candidate_label_color: '0x9EC2AF'
+    hilited_comment_text_color: '0xA76E4F'
+    candidate_text_color: '0x585988'
+    label_color: '0x2E71BA'
+    comment_text_color: '0x416BBE'
+
+  preset_color_schemes/OrangeSugar:
+    name: 橘色泡泡糖
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x474A28'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x73A6FF'
+    text_color: '0x25258A'
+    hilited_text_color: '0x25258A'
+    hilited_back_color: '0x73A6FF'
+    hilited_candidate_text_color: '0xB0D5FF'
+    hilited_candidate_back_color: '0x474A28'
+    hilited_candidate_label_color: '0x579AFF'
+    hilited_comment_text_color: '0xB0D5FF'
+    candidate_text_color: '0x4C6187'
+    label_color: '0x2552A1'
+    comment_text_color: '0x78267A'
+
+  preset_color_schemes/AllBlue:
+    name: 都是藍色
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0xAD9642'                  # 邊框顏色
+    hilited_corner_radius: 7                  # 候選字圓角
+    back_color: '0xAD9642'
+    text_color: '0x372215'
+    hilited_text_color: '0x372215'
+    hilited_back_color: '0xAD9642'
+    hilited_candidate_text_color: '0xA76E4F' #0xF3D7BC
+    hilited_candidate_back_color: '0xD1BA53'
+    hilited_candidate_label_color: '0xF3F3F3'
+    hilited_comment_text_color: '0xA76E4F'
+    candidate_text_color: '0xCECEB5'
+    label_color: '0xF1C17E'
+    comment_text_color: '0xA76E4F'
+
+  preset_color_schemes/BigSurBeach:
+    name: 問就是海灘
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x8FA8FF'                  # 邊框顏色
+    hilited_corner_radius: 7                  # 候選字圓角
+    back_color: '0x8097E4'
+    text_color: '0x462FC0'
+    hilited_text_color: '0x462FC0'
+    hilited_back_color: '0x8097E4'
+    hilited_candidate_text_color: '0xC0D0BD'
+    hilited_candidate_back_color: '0x536746'
+    hilited_candidate_label_color: '0x95C772'
+    hilited_comment_text_color: '0x95C772'
+    candidate_text_color: '0x76672C'
+    label_color: '0x293380'
+    comment_text_color: '0x462FC0'
+
+  preset_color_schemes/BigSurDesert:
+    name: 問就是沙漠
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x8B89EF'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0xA491C0'
+    text_color: '0x6D52CF'
+    hilited_text_color: '0x6D52CF'
+    hilited_back_color: '0xA491C0'
+    hilited_candidate_text_color: '0x3B105C'
+    hilited_candidate_back_color: '0x8B89EF'
+    hilited_candidate_label_color: '0x924564'
+    hilited_comment_text_color: '0x6D52CF'
+    candidate_text_color: '0x8B927E'
+    label_color: '0x6D52CF'
+    comment_text_color: '0x924564'
+
+  preset_color_schemes/GoodEatMango:
+    name: 芒果好吃
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x9CB6E5'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x80E1FB'
+    text_color: '0x994F55'
+    hilited_text_color: '0x994F55'
+    hilited_back_color: '0x80E1FB'
+    hilited_candidate_text_color: '0x375789'
+    hilited_candidate_back_color: '0x9CB6E5'
+    hilited_candidate_label_color: '0xA491C0'
+    hilited_comment_text_color: '0x698AE9'
+    candidate_text_color: '0x7DB590'
+    label_color: '0x7DB590'
+    comment_text_color: '0x43794E'
+
+  preset_color_schemes/DarkMode:
+    name: 夜間模式
+    author: upfloor5
+    color_space: display_p3                # 使用p3廣色域顯色
+    border_color: '0x3E2313'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x372215'
+    text_color: '0xCECEB5'
+    hilited_text_color: '0xCECEB5'
+    hilited_back_color: '0x372215'
+    hilited_candidate_text_color: '0xD5CECF'
+    hilited_candidate_back_color: '0x3E2313'
+    hilited_candidate_label_color: '0x7BB8D1'
+    hilited_comment_text_color: '0xD7E4EC'
+    candidate_text_color: '0x536746'
+    label_color: '0x8B927E'
+    comment_text_color: '0x43794E'
+
+  preset_color_schemes/MaybeWeHaveHug:
+    name: 也許我們都應該被包圍
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x3F331E'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x3F331E'
+    text_color: '0x7070EC'
+    hilited_text_color: '0x7070EC'
+    hilited_back_color: '0x3F331E'
+    hilited_candidate_text_color: '0xD5CECF'
+    hilited_candidate_back_color: '0x7C46C2'
+    hilited_candidate_label_color: '0xF8E9F9'
+    hilited_comment_text_color: '0xFDE8F6'
+    candidate_text_color: '0x8B927E'
+    label_color: '0x536746'
+    comment_text_color: '0x9C8BEB'
+
+  preset_color_schemes/Grassland:
+    name: 草地橘園
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x698AE9'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0xC6E8D0'
+    text_color: '0x95C772'
+    hilited_text_color: '0x95C772'
+    hilited_back_color: '0xC6E8D0'
+    hilited_candidate_text_color: '0x698AE9'
+    hilited_candidate_back_color: '0xA3D4F6'
+    hilited_candidate_label_color: '0x9C8BEB'
+    hilited_comment_text_color: '0x698AE9'
+    candidate_text_color: '0x8B927E'
+    label_color: '0x7DB590'
+    comment_text_color: '0x8B927E'
+
+  preset_color_schemes/TodayIsNotGood:
+    name: 今天有點黑
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    # border_color: '0x698AE9'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x908957'
+    text_color: '0x293380'
+    hilited_text_color: '0x889FC6'
+    hilited_back_color: '0x908957'
+    hilited_candidate_text_color: '0x698AE9'
+    hilited_candidate_back_color: '0x76672C'
+    hilited_candidate_label_color: '0x95C772'
+    hilited_comment_text_color: '0x698AE9'
+    candidate_text_color: '0x585988'
+    label_color: '0x536433'
+    comment_text_color: '0x43794E'
+
+  preset_color_schemes/ClassicChrome:
+    name: 經典負片
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0x53451E'                  # 邊框顏色
+    hilited_corner_radius: 7                  # 候選字圓角
+    back_color: '0xC0D0BD'
+    text_color: '0x76672C'
+    hilited_text_color: '0x76672C'
+    hilited_back_color: '0xC0D0BD'
+    hilited_candidate_text_color: '0xD58865'
+    hilited_candidate_back_color: '0x75C3E3'
+    hilited_candidate_label_color: '0x698AE9'
+    hilited_comment_text_color: ''
+    candidate_text_color: '0x8B8B8B'
+    label_color: '0x8B927E'
+    comment_text_color: '0x53451E'
+
+  preset_color_schemes/GreenWorld:
+    name: 天地草綠
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0xCECEB5'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0x53451E'
+    text_color: '0xD58865'
+    hilited_text_color: '0xD58865'
+    hilited_back_color: '0x53451E'
+    hilited_candidate_text_color: '0x76672C'
+    hilited_candidate_back_color: '0xCECEB5'
+    hilited_candidate_label_color: '0x3E2313'
+    hilited_comment_text_color: '0xC2BB89'
+    candidate_text_color: '0x8B8B8B'
+    label_color: '0x939BAE'
+    comment_text_color: '0x536433'
+
+  preset_color_schemes/DyingMood:
+    name: 腐敗氣息
+    author: upfloor5
+    color_space: display_p3                   # 使用p3廣色域顯色
+    border_color: '0xC591A3'                  # 邊框顏色
+    hilited_corner_radius: 0                  # 候選字圓角
+    back_color: '0xA491C0'
+    text_color: '0xAD9642'
+    hilited_text_color: '0xAD9642'
+    hilited_back_color: '0xA491C0'
+    hilited_candidate_text_color: '0x812258'
+    hilited_candidate_back_color: '0xC591A3'
+    hilited_candidate_label_color: '0x320739'
+    hilited_comment_text_color: '0x812258'
+    candidate_text_color: '0x585988'
+    label_color: '0x585988'
+    comment_text_color: '0xD38851'
+
   # preset_color_schemes:
   #   system_blue:
   #     author: "scomper <scomper@gmail.com>"   # 作者信息
@@ -28,8 +480,6 @@ patch:
   #     border_height: 6                        # 窗口边界高度，大于圆角半径才生效
   #     border_width: 6                         # 窗口边界宽度，大于圆角半径才生效
   #     border_color_width: 0
-
-  "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": true
 
   preset_color_schemes/appsored:
     author: "Astrian Zheng"
@@ -72,7 +522,7 @@ patch:
       label_font_face: "PingFang SC Medium" #皮膚字體
       name: "草茉莉紅"
       text_color: 0xC5C3F2
-      
+
   "preset_color_schemes/win10":  # 在配色方案列表裏加入標識爲 starcraft 的新方案
         name: "Windows 10"
         author: "Cx330"
