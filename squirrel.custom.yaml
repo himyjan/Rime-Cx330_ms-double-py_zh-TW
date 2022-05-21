@@ -24,6 +24,44 @@ patch:
 # 自定義配色
 # 註：預設的配色方案及代碼（指定爲 style/color_scheme ）
 #   系統默認色系 - MaybeWeHaveHug
+#   安卓／Android - android
+#   碧水／Aqua - aqua
+#   青天／Azure - azure
+#   巴西／Brasil - brasil
+#   輕盈／Brisk - brisk
+#   清風／Cool Breeze - cool_breeze
+#   暗堂／Dark Temple - dark_temple
+#   銅鑼衛門／Doraemon - doraemon
+#   DOTA 2 - dota_2
+#   西班牙／España - espagna
+#   小鶴飛揚／flypy - flypy
+#   紅蘿蔔／Gholabok - gholabok
+#   谷歌／Google - google
+#   Google+ - google_plus
+#   墨池／Ink - ink
+#   熊出沒／Kuma Shuzboz - kuma_shuzboz
+#   翡翠／Koun - koun
+#   孤寺／Lost Temple - lost_tample
+#   明月／Luna - luna
+#   澳門／Macau - macau
+#   現代藍／Metro Blue - metroblue
+#   現代戰爭／Modern Warfare - modern_warfare
+#   NBA - nba
+#   遊譯四／PS4 - ps4
+#   幽能／Psionics - psionics
+#   斯蓋普／Skype - skype
+#   藍精靈／Smurfs - smurfs
+#   致青春／So Yang - so_yang
+#   曬經石／Solarized Rock - solarized_rock
+#   星際我爭霸／StarCraft - starCraft
+#   星際我爭霸II／StarCraft II - starCraft_ii
+#   Steam - steam
+#   丁丁／Tintin - tintin
+#   Wii - Wii
+#   Windows 10 - Windows10
+#   銀色叉盒／Xbox Silver - xbox_silver
+#   Youtube - youtube
+###################################################
 #   皇帝玫瑰 - RoseofER
 #   紫金王朝 - Lakers
 #   麥當當 - McDonald
