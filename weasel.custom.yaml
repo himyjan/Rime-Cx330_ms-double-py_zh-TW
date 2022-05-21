@@ -130,10 +130,12 @@ patch:
 #   秋日橙 - red_dark
 #   沙漠夜／Mojave Dark - mojave_dark
 #   apathy - apathy
-#   orange_dark - Mxy
-#   orange_dark - orange_dark
-#   orange_dark - orange_dark
-#   orange_dark - orange_dark
+#   興宇／Mxy - Mxy
+#   Wii2 - Wii2
+#   遊驛四／ps4 - ps4
+#   月白／Moonlight - Moonlight
+#   qbycs - qbycs
+#   阿斯頓／asd - asd
 
   preset_color_schemes/RoseofER:
       name: 皇帝玫瑰
