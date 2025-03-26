@@ -6,7 +6,7 @@
 
 ## 感謝使用柴Rime配置文件
 
-本輸入法適配小鶴雙拼、全拼、五筆
+本輸入法適配微軟雙拼、小鶴雙拼、全拼、五筆
 支持特定條件下中英混合輸入、Emoji輸入、簡繁轉換、傳承字標準字轉換、UTF-8 GBK編碼轉換、200萬詞庫覆蓋日常絕大多數場景。
 
 ## 使用方法
@@ -61,11 +61,3 @@
 ## 本倉庫依賴 [Rime](https://github.com/rime/home)
 
 ### [![Rime網站](https://img.shields.io/badge/Website-Rime-9cf)](https://rime.im)
-
-# 請柴喝杯咖啡
-
-LBC錢包地址：`bc2FpeaknTyveZhzTatj6VWjshmxVYPfC5`
-
-BTC錢包地址：`1LT8U6C7D6HcURRYfHH3HCELU12KztShjg`
-
-USDT錢包地址（TRC-20）：`TCqbPcpFpEefRcbY3VQFuMQ3ztaU4NHnTs`

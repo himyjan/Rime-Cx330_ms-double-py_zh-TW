@@ -208,4 +208,4 @@ Calling clg
 Because cuz
 Good evening    ge
 Good morning    gm 
-Good afternoon  ga 
+Good afternoon  ga
